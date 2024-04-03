@@ -218,8 +218,6 @@ class User {
    **/
 
   static async applyToJob(username, jobId) {
-    console.log(username)
-    console.log(jobId)
     const preCheck = await db.query(
           `SELECT id
            FROM jobs
